@@ -1,0 +1,16 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "atom-light-syntax"
+    ]
+  editor:
+    fontSize: 18
+    showIndentGuide: true
+    showInvisibles: true
+  "linter-js-standard":
+    checkStyleDevDependencies: true
+  "linter-ui-default": {}
+  welcome:
+    showOnStartup: false
