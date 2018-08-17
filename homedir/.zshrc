@@ -3,7 +3,7 @@ export ZSH=$HOME/.dotfiles/oh-my-zsh
 # if you want to use this, change your non-ascii font to Droid Sans Mono for Awesome
 # POWERLEVEL9K_MODE='awesome-patched'
 export ZSH_THEME="powerlevel9k/powerlevel9k"
-# export ZSH_THEME="agnoster"
+# export ZSH_THEME="lambda"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 # https://github.com/bhilburn/powerlevel9k#customizing-prompt-segments
 # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt
@@ -30,7 +30,21 @@ export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colorize compleat dirpersist autojump git gulp history cp)
+plugins=(
+  colorize
+  compleat
+  dirpersist
+  autojump
+  git
+  gulp
+  history
+  cp
+  osx
+  npm
+  yarn
+  nodejs
+  z
+)
 
 source $ZSH/oh-my-zsh.sh
 

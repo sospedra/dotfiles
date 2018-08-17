@@ -6,10 +6,11 @@ module.exports = {
     // Install GNU core utilities (those that come with macOS are outdated)
     // Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
     'coreutils',
+    'moreutils',
     'dos2unix',
     // Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
     'findutils',
-    // 'fortune',
+    'fortune',
     'readline', // ensure gawk gets good readline
     'gawk',
     // http://www.lcdf.org/gifsicle/ (because I'm a gif junky)
@@ -41,21 +42,40 @@ module.exports = {
     'vim --with-override-system-vi',
     'watch',
     // Install wget with IRI support
-    'wget --enable-iri'
+    'wget --enable-iri',
+    // Extras
+    'openssh',
+    'screen',
+    'sfnt2woff',
+    'sfnt2woff-zopfli',
+    'woff2',
+    'lua',
+    'lynx',
+    'p7zip',
+    'pigz',
+    'pv',
+    'rename',
+    'rlwrap',
+    'ssh-copy-id',
+    'tree',
+    'vbindiff',
+    'zopfli',
+    'the_silver_searcher',
+    'yarn --without-node'
   ],
   cask: [
     //'adium',
     //'amazon-cloud-drive',
-    //'atom',
+    'atom',
     // 'box-sync',
     //'comicbooklover',
-    //'diffmerge',
+    'diffmerge',
     'docker', // docker for mac
-    //'dropbox',
-    //'evernote',
+    'dropbox',
+    'evernote',
     'flux',
     'gpg-suite',
-    //'ireadfast',
+    'ireadfast',
     'iterm2',
     'little-snitch',
     'macbreakz',
@@ -67,9 +87,9 @@ module.exports = {
     'slack',
     'the-unarchiver',
     //'torbrowser',
-    //'transmission',
+    'transmission',
     'visual-studio-code',
-    //'vlc',
+    'vlc',
     'xquartz'
   ],
   gem: [
@@ -84,7 +104,8 @@ module.exports = {
     'npm-check-updates',
     'prettyjson',
     'trash',
-    'vtop'
+    'vtop',
+    'npm-name-cli'
     // ,'yo'
   ]
 };

@@ -49,13 +49,6 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 
-
-########
-# Node #
-########
-# Logs
-*.log
-
 # Runtime data
 pids
 *.pid
