@@ -1,0 +1,16 @@
+{{- $email := promptStringOnce . "email" "Git email" "hello@sospedra.me" -}}
+[data]
+    email = {{ $email | quote }}
+
+[git]
+    autoCommit = true
+    autoPush = true
+
+[edit]
+    apply = true
+
+[status]
+    exclude = ["scripts"]
+
+[diff]
+    exclude = ["scripts"]

@@ -1,0 +1,15 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install chezmoi shellcheck gitleaks fish
+      - run: find home/.chezmoiscripts -name '*.sh*' -exec shellcheck {} +
+      - run: find home -name '*.fish' -exec fish --no-execute {} +
+      - run: |
+          mkdir -p "$RUNNER_TEMP/home"
+          chezmoi init --source "$PWD" --destination "$RUNNER_TEMP/home" --promptString "Git email=ci@example.com"
+          chezmoi apply --source "$PWD" --destination "$RUNNER_TEMP/home" --dry-run --verbose
+      - run: gitleaks detect --source . --no-banner

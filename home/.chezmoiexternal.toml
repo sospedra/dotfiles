@@ -1,0 +1,4 @@
+[".local/bin/pa"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/biox/pa/6054f1d670ab53292198ce94a36c919c06dc16d2/pa"
+    executable = true
