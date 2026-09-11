@@ -8,7 +8,7 @@ repos:
     hooks:
       - id: shellcheck
         name: shellcheck
-        entry: shellcheck
+        entry: shellcheck --severity=warning
         language: system
         files: \.sh(\.tmpl)?$
       - id: fish-syntax

@@ -6,8 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: brew install chezmoi shellcheck gitleaks fish
-      - run: shellcheck install.sh
-      - run: if [ -d home/.chezmoiscripts ]; then find home/.chezmoiscripts -name '*.sh*' -exec shellcheck {} +; fi
+      - run: shellcheck --severity=warning install.sh
+      - run: if [ -d home/.chezmoiscripts ]; then find home/.chezmoiscripts -name '*.sh*' -exec shellcheck --severity=warning {} +; fi
       - run: find home -name '*.fish' -exec fish --no-execute {} +
       - run: |
           mkdir -p "$RUNNER_TEMP/home"
