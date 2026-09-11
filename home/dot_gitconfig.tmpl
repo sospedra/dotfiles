@@ -1,0 +1,11 @@
+[user]
+	email = {{ .email }}
+	name = Rubén Sospedra
+[url "{{ .chezmoi.config.git.command }}@github.com{{ .chezmoi.pathListSeparator }}"]
+	insteadOf = https{{ .chezmoi.pathListSeparator }}{{ .chezmoi.pathSeparator }}{{ .chezmoi.pathSeparator }}github.com{{ .chezmoi.pathSeparator }}
+[credential "https{{ .chezmoi.pathListSeparator }}{{ .chezmoi.pathSeparator }}{{ .chezmoi.pathSeparator }}github.com"]
+	helper = 
+	helper = !{{ .chezmoi.pathSeparator }}opt{{ .chezmoi.pathSeparator }}homebrew{{ .chezmoi.pathSeparator }}bin{{ .chezmoi.pathSeparator }}gh auth {{ .chezmoi.config.git.command }}-credential
+[credential "https{{ .chezmoi.pathListSeparator }}{{ .chezmoi.pathSeparator }}{{ .chezmoi.pathSeparator }}gist.github.com"]
+	helper = 
+	helper = !{{ .chezmoi.pathSeparator }}opt{{ .chezmoi.pathSeparator }}homebrew{{ .chezmoi.pathSeparator }}bin{{ .chezmoi.pathSeparator }}gh auth {{ .chezmoi.config.git.command }}-credential
