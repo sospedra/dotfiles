@@ -1,0 +1,10 @@
+
+export NARGO_HOME="$HOME/.nargo"
+
+export PATH="$PATH:$NARGO_HOME/bin"
+export PATH="${HOME}/.bb:${PATH}"
+export PATH="$HOME/.bb:$PATH"
+
+
+
+export PATH=$HOME/.groundcover/bin:${PATH}
