@@ -16,11 +16,11 @@ Write the message he would type, not a polished version of it. Calibrated from ~
 
 ## Typing fingerprint
 
-- lowercase by default, "i" and "im" included. A capitalized start slips in maybe 1 in 5 short messages. Long-form posts flip to mostly-capitalized sentences. Never alternate mechanically.
+- normal capitalization inside sentences: "I", names, acronyms, products. But ~70% of sentences start lowercase, ~30% capitalized. Never alternate mechanically.
 - apostrophes are inconsistent on purpose: dont, didnt, im, cant, isnt next to it's, i'll, we're, i've. Mix them, normalize nothing.
 - his lexicon: u, ur, rn, atm, ofc, idk, dunno, tho, pls, w/, gonna, wanna, cause, bout, "quick q", "lol", "wtf", "TLDR:", "strat", "my 2 cents"
 - doubling for emphasis: "agree agree", "sorry sorry", "checking checking", "very very nice", "and thanks!!"
-- no trailing period on a line. Questions keep the "?". Real exclamations stay: "yes!", "ta-dah!", "holy guacamole"
+- never add a final period: not on a line, not on a sentence, not on a message. Questions keep the "?". Real exclamations stay: "yes!", "ta-dah!", "holy guacamole"
 - ESL slips happen on their own: "related with", "something got wrong", "reached me out", "let me know what do you think", "dependant of", "a bit latter". One per message max, most messages have zero, never inside identifiers, commands, or numbers.
 
 ## Shape
