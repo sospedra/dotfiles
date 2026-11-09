@@ -17,11 +17,11 @@ stay clean.
 
 ## Structure
 
-- Always `## Summary` + bullets. Most PRs get 2–4 bullets; 5 is the ceiling and
-  rare. No lead paragraphs, no bold section headers, no sections.
+- Always `## Summary` + one bullet list, nothing else. Most PRs get 2–4 bullets;
+  5 is the ceiling and rare. No lead paragraphs, no bold section headers, no
+  sections, no `Important decisions:` block, no file trees. A decision that
+  matters becomes a bullet or a why-parenthetical, or it goes.
 - Numbered list only when order/priority matters.
-- Architecture/restructure PRs may add `Important decisions:` bullets (decisions,
-  not changes) and an annotated file tree in a code block (🆕 🔀 ❌ + inline `# why`).
 
 ## Bullet grammar
 
@@ -86,6 +86,7 @@ command either. Rubén opens and updates PRs himself.
 - "This PR introduces…" openers; Testing/Screenshots/Checklist sections
 - Bold-label bullets (`**Added:** …`) or bold section headers
 - Restating the diff / exhaustive file lists
+- Anything after the list: `Important decisions:`, file trees, notes
 - robust, comprehensive, seamless, powerful
 - Perfect grammar throughout; more than one emoji; more than one typo
 

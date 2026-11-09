@@ -46,11 +46,17 @@
   },
   "agent_servers": {
     "claude-acp": {
+      "favorite_config_option_values": {
+        "effort": [
+          "xhigh"
+        ]
+      },
       "default_config_options": {
+        "ultracode": false,
         "fast": true,
-        "model": "claude-fable-5-1[1m]",
-        "effort": "max",
-        "mode": "auto"
+        "model": "opus",
+        "effort": "xhigh",
+        "mode": "bypassPermissions"
       },
       "type": "registry"
     },
@@ -67,9 +73,9 @@
   },
   "excerpt_context_lines": 8,
   "agent": {
+    "use_modifier_to_send": true,
     "thinking_display": "preview",
     "show_turn_stats": true,
-    "use_modifier_to_send": false,
     "sidebar_side": "right",
     "dock": "right",
     "default_profile": "ask",
