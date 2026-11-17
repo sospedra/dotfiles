@@ -52,7 +52,7 @@
         ]
       },
       "default_config_options": {
-        "ultracode": false,
+        "ultracode": true,
         "fast": true,
         "model": "opus",
         "effort": "xhigh",

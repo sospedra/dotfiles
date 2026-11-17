@@ -63,3 +63,6 @@ set -gx PATH $HOME/go/bin $PATH;
 set -gx PATH $HOME/.bb $PATH
 
 fish_add_path $HOME/.groundcover/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sospedra/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/sospedra/Downloads/google-cloud-sdk/path.fish.inc'; end
